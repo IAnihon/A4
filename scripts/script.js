@@ -15,7 +15,7 @@ let  currentStatus ='all-btn';
 
 
 let upCount = getId('up-job-count')
-// done
+// done 1
 function getId(id){
     return document.getElementById(id);
 }

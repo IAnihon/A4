@@ -15,7 +15,10 @@ let  currentStatus ='all-btn';
 
 
 let upCount = getId('up-job-count')
-
+// done
+function getId(id){
+    return document.getElementById(id);
+}
 
 
 function toggle(id){

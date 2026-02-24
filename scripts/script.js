@@ -370,9 +370,7 @@ function syncAllCard(jobName, type) {
 
 
 // new code
-function getId(id){
-    return document.getElementById(id);
-}
+
 function view(){
 
  if(currentStatus ==='all-btn'){

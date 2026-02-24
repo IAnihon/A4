@@ -259,7 +259,7 @@ filterSection.appendChild(div);
  }
 
 
-//  reject section updte
+//  reject section 
 
 function renderReject(){
 

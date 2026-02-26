@@ -264,10 +264,10 @@ const div = document.createElement('div');
                 <p class="text-[18px] job-name font-semibold text-[#002C5C]">${rest.jobName}</p>
                 <p class="text-[14px] job pb-3 text-[#64748B]">${rest.job}</p>
                 <p class="text-[14px] salary text-[#64748B]">${rest.salary}</p>
-                <p class="text-[14px]  bg-green-50 text-green-500 font-semibold   px-2 rounded-md py-2 w-[100px] text-center status" >INTERVIEW</p>
+                <p class="text-[14px]  bg-green-50 text-green-600 font-semibold   px-2 rounded-md py-2 w-[100px] text-center status" >INTERVIEW</p>
                 <p class="text-[14px] info text-[#323B49] ">${rest.info}</p>
                 <div class="mt-3">
-                        <button class="bg-white border font-semibold border-green-500 text-green-500 px-4 py-1 rounded-md text-[14px] interview-btn">INTERVIEW</button>
+                        <button class="bg-white border font-bold border-green-500 text-green-600 px-4 py-1 rounded-md text-[14px] interview-btn">INTERVIEW</button>
                     <button class="bg-white border font-semibold border-red-500 text-red-500 px-4 py-1 reject-btn rounded-md text-[14px]">REJECTED</button>
                      </div>
 

@@ -256,16 +256,16 @@ if(name === jobName){
  function renderInterview(){
 
 filterSection.innerHTML = '';
-for(let r of interviewList){
+for(let rest of interviewList){
 const div = document.createElement('div');
- div.className ="bg-white  border-l-4 border-green-300 p-5 flex rounded-lg shadow-sm  mb-4 justify-between";
+ div.className ="bg-white  border-l-5 border-green-300 p-6 flex rounded-lg shadow-sm  mb-4 justify-between";
  div.innerHTML =` 
  <div id="" class="space-y-1   ">
-                <p class="text-[18px] job-name font-semibold text-[#002C5C]">${r.jobName}</p>
-                <p class="text-[14px] job pb-3 text-[#64748B]">${r.job}</p>
-                <p class="text-[14px] salary text-[#64748B]">${r.salary}</p>
-                <p class="text-[14px]  bg-green-50 text-green-400 font-semibold   px-1 rounded-md py-1 w-[100px] text-center status" >Interview</p>
-                <p class="text-[14px] info text-[#323B49] ">${r.info}</p>
+                <p class="text-[18px] job-name font-semibold text-[#002C5C]">${rest.jobName}</p>
+                <p class="text-[14px] job pb-3 text-[#64748B]">${rest.job}</p>
+                <p class="text-[14px] salary text-[#64748B]">${rest.salary}</p>
+                <p class="text-[14px]  bg-green-50 text-green-500 font-semibold   px-2 rounded-md py-2 w-[100px] text-center status" >INTERVIEW</p>
+                <p class="text-[14px] info text-[#323B49] ">${rest.info}</p>
                 <div class="mt-3">
                         <button class="bg-white border font-semibold border-green-500 text-green-500 px-4 py-1 rounded-md text-[14px] interview-btn">INTERVIEW</button>
                     <button class="bg-white border font-semibold border-red-500 text-red-500 px-4 py-1 reject-btn rounded-md text-[14px]">REJECTED</button>
@@ -291,16 +291,16 @@ filterSection.appendChild(div);
 function renderReject(){
 
 filterSection.innerHTML = '';
-for(let r of rejectedList){
+for(let S of rejectedList){
    const div = document.createElement('div');
  div.className ="bg-white  border-l-4 border-red-300 p-5 flex rounded-lg shadow-sm  mb-4 justify-between";
  div.innerHTML =` 
  <div id="" class="space-y-1   ">
-                <p class="text-[18px] job-name font-semibold text-[#002C5C]">${r.jobName}</p>
-                <p class="text-[14px] job pb-3 text-[#64748B]">${r.job}</p>
-                <p class="text-[14px] salary text-[#64748B]">${r.salary}</p>
-                <p class="text-[14px]  bg-red-50 text-red-600  font-semibold px-1  rounded-md py-1 w-[100px] text-center status" >Rejected</p>
-                <p class="text-[14px] info text-[#323B49] ">${r.info}</p>
+                <p class="text-[18px] job-name font-semibold text-[#002C5C]">${S.jobName}</p>
+                <p class="text-[14px] job pb-3 text-[#64748B]">${S.job}</p>
+                <p class="text-[14px] salary text-[#64748B]">${S.salary}</p>
+                <p class="text-[14px]  bg-red-50 text-red-600  font-semibold px-1  rounded-md py-1 w-[100px] text-center status" >REJECTED</p>
+                <p class="text-[14px] info text-[#323B49] ">${S.info}</p>
                 <div class="mt-3">
                         <button class="bg-white border font-semibold border-green-500 text-green-500 px-4 py-1 rounded-md text-[14px] interview-btn">INTERVIEW</button>
                     <button class="bg-white border font-semibold border-red-500 text-red-500 px-4 py-1 rounded-md text-[14px]">REJECTED</button>
@@ -321,7 +321,7 @@ filterSection.appendChild(div);
  }
 }
 // push all job in the list
-function AllJobLists (){
+function JobLists (){
 const cards = cardContainer.children;
 for(let card of cards){
   const jobName= card.querySelector('.job-name').innerText;
@@ -342,7 +342,7 @@ jc();
 
 
 }
-AllJobLists();
+JobLists();
 
 function jc(){
   upCount.innerText = cardContainer.children.length;

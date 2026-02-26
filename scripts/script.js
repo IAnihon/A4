@@ -149,15 +149,7 @@ const info = parentNode.querySelector('.info').innerText;
 const status = parentNode.querySelector('.status');
 status.innerText = 'Interview';
 
- // current clicked card style
-// parentNode.parentNode.classList.remove("border-red-300","border-green-300");
-// parentNode.parentNode.classList.add("border-l-4","border-green-300");
-//  status.classList.remove(
-//   "bg-[#EEF4FF]", "text-[#002C5C]", "font-medium",
-//   "bg-red-50", "text-red-600",
-//   "bg-green-50", "text-green-400", "text-green-600",
-//   "font-bold", "font-semibold");
-//  status.classList.add("bg-green-50","text-green-400","font-semibold");
+
 
 const cardinfo ={
   jobName,
@@ -195,15 +187,7 @@ const info = parentNode.querySelector('.info').innerText;
 const status = parentNode.querySelector('.status');
 status.innerText = 'Rejected';
 
- // current clicked card style
 
-//  parentNode.parentNode.classList.remove("border-l-4","border-red-300","border-green-300");
-//  parentNode.parentNode.classList.add("border-l-4","border-red-300");
-//  status.classList.remove("bg-[#EEF4FF]", "text-[#002C5C]", "font-medium",
-//   "bg-red-50", "text-red-600",
-//   "bg-green-50", "text-green-600",
-//   "font-bold", "font-semibold")
-//  status.classList.add("bg-red-50","text-red-600","font-bold")
 
 const cardinfo ={
   jobName,
@@ -233,7 +217,7 @@ calculateCount();
 }
  )
 
-//  delete btn work
+//  delete button working
 
 main.addEventListener("click",function(id){
   const deletebtn = id.target.closest('.delete-btn')
